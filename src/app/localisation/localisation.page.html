@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <!-- <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons> -->
+        <ion-title text-center>
+         LIEU DE LIVRAISON
+        </ion-title>
+      </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+      <ion-label position="floating">Choisissez votre ville</ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label position="floating">Choisissez votre quartieir</ion-label>
+      <ion-input type="text" ></ion-input>
+    </ion-item>
+    <p><ion-icon name="pin"></ion-icon>Utiliser ma position actuelle</p>
+    <br>
+    <br>
+    <br>
+    <div>
+        <img src="../../assets/img/abendessen-essen-essensfotografie-958545.jpg">
+    </div>
+    
+    <br>
+    <ion-button expand="full" color="danger" (click)="openrestaurent()">VOIR LES RESTAURANTS</ion-button>
+</ion-content>

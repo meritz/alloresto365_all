@@ -1,0 +1,7 @@
+{
+  "name": "alloResto365_all",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

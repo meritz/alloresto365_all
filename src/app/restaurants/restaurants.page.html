@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Restaurants</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="openCart()">
+        <ion-badge *ngIf="cart.length > 0">{{ cart.length }}</ion-badge>
+        <ion-icon slot="icon-only" name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+      <ion-row no-padding class="row_slider">
+          <ion-col>
+              <ion-slides pager="true" loop="true" [options]="slideOpts">
+                  <ion-slide *ngFor="let img of images">
+                      <img src="../../assets/img/menus/{{img}}">
+                  </ion-slide>
+                </ion-slides>
+            </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div *ngFor="let cat of items" class="category-block">
+      <ion-row no-padding class="category-banner">
+        <ion-col text-center button tappable (click)="cat.expanded = !cat.expanded" align-self-center>
+          {{ cat.category }}
+        </ion-col>
+      </ion-row>
+      <ion-slides [options]="sliderConfig">
+        <ion-slide *ngFor="let product of cat.products">
+          <div *ngIf="cat.expanded">
+            <ion-card class="card-background-page">
+                <img src={{product.menutImage}}/>
+                <ion-card-content>
+                  {{ product.name }} - cfa {{ product.price }}
+                  <ion-button expand="full" (click)="addToCart(product)">Add to cart</ion-button>
+                </ion-card-content>
+                
+            </ion-card>
+          </div>
+        </ion-slide>
+      </ion-slides>
+    </div >
+    <h3 class="restaurant" text-center>LES RESTAURANTS</h3>
+    <div>
+        <ion-card class="card-background-page" *ngFor="let restau of listRestaurant" (click)="opendetail(restau)">
+            <img src={{restau.firstImage}}/>
+            <ion-card-content >
+                <ion-card-title>
+                {{restau.name}}
+                </ion-card-title>
+                <ion-row>
+                    <ion-col>
+                        <p>{{restau.specialiter}}</p>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                <ion-col>
+                    <ion-icon name="star"></ion-icon>
+                <span item-start>{{restau.note}} * $$$ </span>
+                </ion-col>
+            </ion-row>
+            </ion-card-content>
+          </ion-card>
+    </div>
+  
+
+
+</ion-content>

@@ -1,0 +1,47 @@
+
+ion-badge {
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 100%;
+}
+ 
+.category-block {
+    margin-bottom: 4px;
+}
+ 
+.category-banner {
+    border-left: 8px solid var(--ion-color-secondary);
+    background: var(--ion-color-light);
+    height: 80%;
+    padding: 10px;
+    font-weight: 500;
+}
+.restaurant {
+    border-left: 8px solid var(--ion-color-secondary);
+    background: var(--ion-color-light);
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+.card-content-md {
+     padding-top: 5px; 
+    line-height: 0.5;
+    padding-bottom:0;
+}
+
+ion-col{
+    padding-bottom: 3px;
+    padding-top: 0px;
+}
+
+.card-content {
+    display: block;
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 0px; 
+    
+}
+
