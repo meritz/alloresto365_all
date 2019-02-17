@@ -27,7 +27,8 @@ const routes: Routes = [
   { path: 'commandes', loadChildren: './commandes/commandes.module#CommandesPageModule' },
   { path: 'info', loadChildren: './info/info.module#InfoPageModule' },
   { path: 'payement', loadChildren: './payement/payement.module#PayementPageModule' },
-  { path: 'thank-page', loadChildren: './thank-page/thank-page.module#ThankPagePageModule' }
+  { path: 'thank-page', loadChildren: './thank-page/thank-page.module#ThankPagePageModule' },
+  { path: 'menu-detail', loadChildren: './menu-detail/menu-detail.module#MenuDetailPageModule' }
 ];
 
 @NgModule({
