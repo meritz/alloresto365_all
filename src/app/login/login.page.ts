@@ -82,7 +82,8 @@ export class LoginPage implements OnInit {
 
   goToHome() {
     // this.navCtrl.navigateRoot('/home');
-    this.navCtrl.navigateForward(['restaurants']);
+    this.navCtrl.navigateForward(['payement']);
+    
   }
 
 }

@@ -28,8 +28,17 @@ export class CartPage implements OnInit {
     this.total = this.selectedItems.reduce((a, b) => a + (b.count * b.price), 0);
   }
 
-  onPayement(){
+  onPayement() {
+    var user = false;
+    if (user ) {
       this.navCtrl.navigateForward(['payement']);
+    } else {
+      this.navCtrl.navigateForward(['login']);
+    }
+  }
+
+  removeItem(itm) {
+    
   }
 
 }
