@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../service/cart.service';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-cart',
@@ -11,7 +12,7 @@ export class CartPage implements OnInit {
 
   total = 0;
 
-  constructor(private cartService: CartService) { }
+  constructor(private cartService: CartService, public navCtrl: NavController) { }
 
   ngOnInit() {
     let items = this.cartService.getCart();
@@ -25,6 +26,10 @@ export class CartPage implements OnInit {
     }
     this.selectedItems = Object.keys(selected).map(key => selected[key] );
     this.total = this.selectedItems.reduce((a, b) => a + (b.count * b.price), 0);
+  }
+
+  onPayement(){
+      this.navCtrl.navigateForward(['payement']);
   }
 
 }
