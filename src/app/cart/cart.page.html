@@ -13,9 +13,6 @@
           <ion-item *ngFor="let item of selectedItems" lines="inset">
             {{ item.count }}x {{ item.name }} - {{ item.price | currency:'XOF':'symbol' }}
             <ion-label slot="end" text-right>{{ (item.price * item.count) | currency:'XOF':'symbol' }}</ion-label>
-            <span (click)="removeItem(item)" class="remove">
-              Remove
-            </span>
           </ion-item>
 
           <ion-item>

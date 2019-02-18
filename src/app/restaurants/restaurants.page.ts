@@ -10,11 +10,14 @@ import { DetailRestaurantPage } from '../detail-restaurant/detail-restaurant.pag
   styleUrls: ['./restaurants.page.scss'],
 })
 export class RestaurantsPage implements OnInit {
-  images = ['food.jpg',
-            'foodj.jpg',
-            'heroagrifood.jpg',
-            'p04tx3m6.jpg',
-             'food.jpg'];
+  images = ['2.jpg',
+            '2.jpg',
+            '2.jpg',
+            '2.jpg',
+            '2.jpg',
+            '2.jpg',
+            '2.jpg',
+           ];
   slideOpts = {
     effect: 'flip'
   };

@@ -79,9 +79,13 @@ export class CartService {
         {
         category: 'resitance',
         plats: [
-          { id: 6, name: 'poison braise', price: '8',  menutImage: '../../assets/img/plats/12364490_10153794105543252_531651220_o-1.jpg' },
-          { id: 7, name: 'salade', price: '5',  menutImage: '../../assets/img/plats/304393-svetik.jpg' },
-          { id: 8, name: 'Ceaser gombo', price: '9',  menutImage: '../../assets/img/plats/321440-svetik.jpg' }
+          { id: 6, name: 'poison braise', price: '8',  menutImage: '../../assets/img/plats/336143-svetik.jpg' },
+          { id: 7, name: 'salade', price: '5',  menutImage: '../../assets/img/plats/6186cd7be2f46a7cd7b4f51c5501c9c7.png' },
+          { id: 8, name: 'Ceaser gombo', price: '9',  menutImage: '../../assets/img/plats/7584650-11709219.jpg' },
+          { id: 8, name: 'Ceaser gombo', price: '9',  menutImage: '../../assets/img/gris/_a6a9764-2-copie.jpg' },
+          { id: 8, name: 'Ceaser gombo', price: '9',  menutImage: '../../assets/img/gris/_a6a9794-2-copie.jpg' },
+
+
         ]},
     ]
     },
