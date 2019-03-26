@@ -15,7 +15,7 @@ export class PayementPage implements OnInit {
     
   }
 
-  async confirmation(){
+  async confirmation() {
     const loader = await this.loadingCtrl.create({
       duration: 2000
     });

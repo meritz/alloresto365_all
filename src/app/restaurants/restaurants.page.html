@@ -13,11 +13,11 @@
   </ion-toolbar>
 </ion-header>
  
-<ion-content>
+<ion-content fullscreen class="contentBody">
     <ion-grid>
       <ion-row no-padding class="row_slider">
           <ion-col>
-              <ion-slides pager="true" loop="true"  autoplay=3000 slidesPerView=1 [options]="slideOpts">
+              <ion-slides pager="true"  slidesPerView=1 [options]="slideOpts">
                   <ion-slide *ngFor="let img of images">
                       <img src="../../assets/img/animee/{{img}}">
                   </ion-slide>
@@ -35,10 +35,31 @@
         <ion-slide *ngFor="let product of cat.products">
           <div *ngIf="cat.expanded">
             <ion-card class="card-background-page">
+                <ion-badge slot="end" class="formulPrice">35 min</ion-badge>
                 <img src={{product.menutImage}}/>
                 <ion-card-content>
-                  {{ product.name }} - cfa {{ product.price }}
-                  <ion-button expand="full" (click)="addToCart(product)">Add to cart</ion-button>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="7">
+                        <ion-card-title>{{ product.name }}</ion-card-title>
+                      </ion-col >
+                      <ion-col size="5">
+                        <h6>
+                            {{ product.price }}cfa
+                        </h6>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col size="8">
+                          <p>Pizza+Salade+jus</p>
+                      </ion-col >
+                      <ion-col size="4">
+                        <ion-button shape="round" class="formulBntAjoute" (click)="addToCart(product)" >
+                          <ion-icon slot="icon-only" name="cart"></ion-icon>
+                        </ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
                 </ion-card-content>
                 
             </ion-card>
@@ -46,9 +67,10 @@
         </ion-slide>
       </ion-slides>
     </div >
-    <h3 class="restaurant" text-center>LES RESTAURANTS</h3>
+    <h6 class="restaurant" text-center>LES RESTAURANTS</h6>
     <div>
         <ion-card class="card-background-page" *ngFor="let restau of listRestaurant" (click)="opendetail(restau)">
+            <ion-badge slot="end" class="formulPrice">30 min</ion-badge>
             <img src={{restau.firstImage}}/>
             <ion-card-content >
                 <ion-card-title>
@@ -61,7 +83,7 @@
                 </ion-row>
                 <ion-row>
                 <ion-col>
-                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star" color="warning"></ion-icon>
                 <span item-start>{{restau.note}} * $$$ </span>
                 </ion-col>
             </ion-row>

@@ -1,4 +1,7 @@
 :host {
+
+    
+
     ion-badge {
         color: #fff;
         position: absolute;
@@ -13,17 +16,19 @@
      
     .category-banner {
         border-left: 8px solid var(--ion-color-secondary);
-        background: var(--ion-color-light);
+        background: var(--ion-color-secondary);
         height: 80%;
         padding: 10px;
+        color: #fff;
         font-weight: 500;
     }
     .restaurant {
         border-left: 8px solid var(--ion-color-secondary);
-        background: var(--ion-color-light);
+        background: var(--ion-color-secondary);
         font-weight: 500;
         padding: 10px;
         margin-top: 0px;
+        color: #fff;
     }
     
     .card-content-md {
@@ -53,6 +58,23 @@
     .swiper-pagination-bullet-active {
         background: #ffff !important;
     }
+    .slide-zoom, .swiper-slide {
+        text-align: left;
+    }
+
+    // pour la parti de formul 
+
+    .formulPrice{
+        color: #f60f0f;
+        background-color: white;
+        padding: 12px;
+        border-radius: 45%;
+        margin-top: -6px;
+        margin-right: -7px;
+       
+    }
+
+    
     
 }
 

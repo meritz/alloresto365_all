@@ -13,10 +13,10 @@ export class CartService {
       products: [
         { id: 0, name: 'SftRegal', price: '3000' , menutImage: '../../assets/img/animee/9.jpg'},
         { id: 1, name: 'SweetRegal', price: '3500', menutImage: '../../assets/img/animee/4.jpg' },
-        { id: 2, name: 'Akoumé + adémé', price: '3000' ,  menutImage: '../../assets/img/animee/7.jpg'},
+        { id: 2, name: 'Akoumé ', price: '3000' ,  menutImage: '../../assets/img/animee/9.jpg'},
         { id: 3, name: ' Djékoumé', price: '3000',  menutImage: '../../assets/img/animee/6.jpg'},
-        { id: 3, name: ' Fried rice', price: '3000',  menutImage: '../../assets/img/animee/4.jpg'},
-        { id: 3, name: 'Riz au gras', price: '3000',  menutImage: '../../assets/img/animee/1.jpg'},
+        { id: 4, name: ' Fried rice', price: '3000',  menutImage: '../../assets/img/animee/4.jpg'},
+        { id: 5, name: 'Riz au gras', price: '3000',  menutImage: '../../assets/img/animee/9.jpg'},
 
       ]
     },
@@ -58,6 +58,7 @@ export class CartService {
         expanded: true,
         category: 'entre',
         plats: [
+          // tslint:disable-next-line:max-line-length
           { id: 6, name: 'Ham & Egg', price: '2000',  menutImage: '../../assets/img/plat-fon/14702362_670926693058767_2957661286413590959_n.jpg' },
           { id: 7, name: 'Basic', price: '7480',  menutImage: '../../assets/img/plat-fon/6153495191491945652.jpg' },
           { id: 8, name: 'Spagueti', price: '1000',  menutImage: '../../assets/img/plat-fon/Bases-Photo-culinaire-679x350.jpg' },

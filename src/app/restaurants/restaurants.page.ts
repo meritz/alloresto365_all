@@ -11,15 +11,15 @@ import { DetailRestaurantPage } from '../detail-restaurant/detail-restaurant.pag
 })
 export class RestaurantsPage implements OnInit {
   images = ['2.jpg',
-            '2.jpg',
-            '2.jpg',
-            '2.jpg',
-            '2.jpg',
-            '2.jpg',
-            '2.jpg',
+            '9.jpg',
+            '3.jpg',
+            '6.jpg',
+            '3.jpg',
            ];
   slideOpts = {
-    effect: 'flip'
+    effect: 'flip',
+    autoplay: true,
+    loop: true,
   };
 
   cart = [];

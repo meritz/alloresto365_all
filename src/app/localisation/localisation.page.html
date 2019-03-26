@@ -3,7 +3,7 @@
         <!-- <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons> -->
-        <ion-title text-center>
+        <ion-title>
          LIEU DE LIVRAISON
         </ion-title>
       </ion-toolbar>
@@ -19,7 +19,7 @@
       <ion-label position="floating">Choisissez votre quartieir</ion-label>
       <ion-input type="text" ></ion-input>
     </ion-item>
-    <p><ion-icon name="pin"></ion-icon>Utiliser ma position actuelle</p>
+    <p><ion-icon name="pin" color="danger"></ion-icon>&nbsp;&nbsp; Ma position actuelle</p>
     <br>
     <br>
     <br>
@@ -28,5 +28,5 @@
     </div>
     
     <br>
-    <ion-button expand="full" color="danger" (click)="openrestaurent()">VOIR LES RESTAURANTS</ion-button>
+    <ion-button expand="full" shape="round" color="primary" (click)="openrestaurent()">VOIR LES RESTAURANTS</ion-button>
 </ion-content>
